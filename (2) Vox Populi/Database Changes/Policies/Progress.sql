@@ -43,13 +43,8 @@ VALUES
 	('POLICY_LIBERTY', 'YIELD_CULTURE', 15);
 
 -- Collective Rule (now Organization)
-DELETE FROM Policy_FreeUnitClasses
-WHERE PolicyType = 'POLICY_COLLECTIVE_RULE';
-
 UPDATE Policies
 SET
-	CapitalSettlerProductionModifier = 0,
-	IncludesOneShotFreeUnits = 0,
 	PortraitIndex = 29,
 	IconAtlas = 'POLICY_ATLAS',
 	IconAtlasAchieved = 'POLICY_A_ATLAS'
